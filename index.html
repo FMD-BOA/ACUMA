@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="de">
 <head>
   <meta charset="utf-8">
   <title>Minimal Chat</title>
@@ -7,17 +7,30 @@
 </head>
 <body>
 
-<div id="login">
+<div class="box" id="login">
+  <h2 class="title">
+    <img src="logo-login.png" alt="">
+    Login
+  </h2>
+
   <input id="user" placeholder="username (A oder B)">
   <input id="pw" type="password" placeholder="password">
   <button onclick="login()">Login</button>
   <div id="err"></div>
 </div>
 
-<div id="chat" style="display:none">
-  <input id="msg">
-  <button onclick="send()">Send</button>
-  <pre id="log"></pre>
+<div class="box" id="chat" style="display:none">
+  <h2 class="title">
+    <img src="logo-chat.png" alt="">
+    Chat
+  </h2>
+
+  <div id="log"></div>
+
+  <div class="input-row">
+    <input id="msg">
+    <button onclick="send()">Send</button>
+  </div>
 </div>
 
 <script type="module" src="script.js"></script>
