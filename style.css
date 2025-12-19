@@ -67,4 +67,12 @@ button {
 
 .input-row input {
   flex: 1;
+  padding: 6px;
+  font-size: 0.9em;
+}
+
+.input-row button {
+  width: 80px; /* feste Breite für Send */
+  padding: 6px;
+  font-size: 0.9em;
 }
