@@ -89,6 +89,15 @@ button {
   margin-top: 5px;
 }
 
+.input-row textarea {
+  flex: 1;
+  padding: 6px;
+  font-family: sans-serif;
+  font-size: 0.9em;
+  resize: none; /* optional, verhindert dass der Nutzer das Feld zieht */
+  height: 50px; /* Anfangshöhe */
+}
+
 /* Input-Feld in Chat */
 .input-row input {
   flex: 1;
