@@ -11,15 +11,15 @@ body {
 /* LOGIN BOX */
 .login-box {
   width: 320px;
-  margin: 0 auto;         /* horizontales Zentrieren */
+  margin: 0 auto;
   padding: 20px;
-  text-align: center;      /* Titel und Logo zentrieren */
+  text-align: center;
 }
 
 /* Zeile mit Label + Input */
 .login-row {
   display: flex;
-  justify-content: center; /* gesamte Zeile zentriert */
+  justify-content: center;
   align-items: center;
   margin-bottom: 10px;
   width: 100%;
@@ -29,15 +29,15 @@ body {
 /* Label links vom Input */
 .login-label {
   font-family: serif;
-  width: 80px;             /* feste Breite für Label */
+  width: 80px;
   text-align: right;
   margin-right: 10px;
-  flex-shrink: 0;          /* Label schrumpft nicht */
+  flex-shrink: 0;
 }
 
 /* Input-Feld */
 .login-row input {
-  flex: 1;                  /* Input nimmt Rest der Zeile */
+  flex: 1;
   padding: 6px;
   font-family: sans-serif;
 }
@@ -102,4 +102,34 @@ button {
   width: 80px;
   font-family: serif;
   padding: 6px;
+}
+
+/* Oberer Banner */
+#top-banner {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 6px 0;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+/* Unterer Banner */
+#bottom-banner {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 6px 0;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
