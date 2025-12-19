@@ -1,19 +1,61 @@
+/* Allgemeines Body-Layout */
 body {
   margin: 0;
-  font-family: serif;
+  font-family: sans-serif;
   display: flex;
   justify-content: center;
   padding: 20px;
   background: #f5f5f5;
 }
 
-/* Login Box */
+/* LOGIN BOX */
 .login-box {
   width: 320px;
-  text-align: center;
+  margin: 0 auto;         /* horizontales Zentrieren */
+  padding: 20px;
+  text-align: center;      /* Titel und Logo zentrieren */
 }
 
-/* Chat Box */
+/* Zeile mit Label + Input */
+.login-row {
+  display: flex;
+  justify-content: center; /* gesamte Zeile zentriert */
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Label links vom Input */
+.login-label {
+  font-family: serif;
+  width: 80px;             /* feste Breite für Label */
+  text-align: right;
+  margin-right: 10px;
+  flex-shrink: 0;          /* Label schrumpft nicht */
+}
+
+/* Input-Feld */
+.login-row input {
+  flex: 1;                  /* Input nimmt Rest der Zeile */
+  padding: 6px;
+  font-family: sans-serif;
+}
+
+/* Buttons in Serifschrift */
+button {
+  font-family: serif;
+  padding: 6px;
+  cursor: pointer;
+}
+
+/* LOGIN Button */
+.login-box button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* CHAT BOX */
 .chat-box {
   width: 100%;
 }
@@ -25,29 +67,9 @@ body {
   margin: 0 auto 10px auto;
 }
 
+/* Titel */
 .title {
   margin: 0 0 10px 0;
-  text-align: center;
-}
-
-/* Input / Buttons */
-input {
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-  padding: 6px;
-}
-
-button {
-  width: 100%;
-  padding: 6px;
-  font-family: serif;
-}
-
-/* Error Text */
-#err {
-  color: red;
-  font-size: 0.9em;
   text-align: center;
 }
 
@@ -60,46 +82,24 @@ button {
   overflow-y: auto;
 }
 
-/* Input row */
+/* Eingabezeile unter Chat */
 .input-row {
   display: flex;
   gap: 6px;
+  margin-top: 5px;
 }
 
+/* Input-Feld in Chat */
 .input-row input {
   flex: 1;
   padding: 6px;
-  font-size: 0.9em;
-}
-
-.input-row button {
-  width: 80px; /* feste Breite für Send */
-  padding: 6px;
-  font-size: 0.9em;
-}
-
-.login-box {
-  width: 320px;
-  margin: 0 auto;
-  text-align: center; /* Box zentriert */
-}
-
-.login-row {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* zentriert die gesamte Zeile innerhalb der Box */
-  margin-bottom: 10px;
-}
-
-.login-label {
-  font-family: serif;
-  margin-right: 10px;
-  width: 80px; /* fixierte Breite */
-  text-align: right;
-}
-
-.login-row input {
-  flex: 1;
-  padding: 6px;
   font-family: sans-serif;
+  font-size: 0.9em;
+}
+
+/* Send-Button kompakt */
+.input-row button {
+  width: 80px;
+  font-family: serif;
+  padding: 6px;
 }
