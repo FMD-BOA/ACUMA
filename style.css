@@ -41,6 +41,7 @@ input {
 button {
   width: 100%;
   padding: 6px;
+  font-family: serif;
 }
 
 /* Error Text */
@@ -79,6 +80,7 @@ button {
 
 .login-box {
   width: 320px;
+  margin: 0 auto;
   text-align: center; /* Box zentriert */
 }
 
